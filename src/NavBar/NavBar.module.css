@@ -1,0 +1,93 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+  }
+ .NavBar{
+     display: flex;
+     z-index: 2;
+     position: fixed;
+ }
+ .NavBar nav{
+     height: 60px;
+     width: 100vw;
+     background-color:#f8f9fa;
+    
+     /* border: 2px solid rebeccapurple; */
+ }
+ .NavBar .DCLogo{
+    position: absolute; 
+    align-content: center;
+    margin-left: 3vw;
+    cursor: pointer;
+}
+.NavBar .LogoText{
+    text-decoration: none;
+    color: #b2002d;
+ }
+
+ .NavBar nav ul{
+    /* justify-content:center; */
+    position: absolute;
+    right:5%;
+    top:5%;
+   margin: 0;
+   
+ }
+
+ .NavBar nav ul li{
+   
+     display: inline-block;
+     margin: 1vw;
+     font-size: 20px;
+ }
+ .NavBar nav ul li a{
+    text-decoration: none;
+    color: #b2002d;
+ }
+ .NavBar a:hover{
+  border-bottom: 4px solid #b2002d;
+ }
+ .NavBar .MobileNavigation{
+     display: none;
+ }
+ @media (max-width: 768px){
+     .NavBar .Navigation{
+         display: none;
+     }
+     .NavBar .MobileNavigation{
+         display: flex;
+        
+         align-items: center;
+         background-color: #f8f9fa;
+     }
+     .NavBar  .MobileNavigation .Hamburger{
+         position: absolute;
+         right: 5%;
+         cursor: pointer;
+         color: #b2002d;
+         
+     }
+     .NavBar .MobileNavigation .DCLogo{
+         position: absolute;
+         margin-left: 3vw;
+         cursor: pointer;
+         
+     }
+     .NavBar nav ul{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         position: absolute;
+         top: 60px;
+         right: 0;
+         background-color: #f8f9fa;
+         width: 100%;
+         padding: 20px;
+         /* overflow:visible; */
+         z-index:5;
+     }
+     .NavBar a:hover{
+         border-bottom: 2px solid #b2002d;
+     }
+ }

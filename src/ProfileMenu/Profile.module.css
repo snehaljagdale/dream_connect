@@ -1,0 +1,152 @@
+.ProfileBar{
+    display: flex;
+    flex-direction: column;
+}
+.ProfileBar nav{
+    height: 100vh;
+    width: 18vw;
+    
+    background-color:#e2e4e5;
+    /* border: 2px solid rebeccapurple; */
+}
+
+
+.ProfileBar nav ul{
+   /* justify-content:center; */
+   /* position: relative; */
+  
+   left:0px;
+   top:10%;
+  margin: 0;   
+  padding: 0;
+  
+}
+
+.ProfileBar nav ul li{
+  
+    display:flex;
+    flex-direction: column;
+    margin: 2vw;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.ProfileBar nav ul li a{
+    text-decoration: none;
+    color: #b2002d;
+ }
+ 
+
+ /* .ProfileBar a:hover{
+    border-bottom: 2px solid #b2002d;
+   } */
+/* .ProfileBar nav ul li a.active{
+   border: 2px solid #b2002d;
+   background-color: black;
+  
+} */
+
+.ProfileBar .MobileMenu{
+    display: none;
+}
+@media (min-width:540px) and (max-width: 768px){
+    .ProfileBar .DesktopMenu{
+        display: none;
+    }
+    .ProfileBar .MobileMenu{
+        display: flex;
+        position: fixed;
+        top: 15%;
+        z-index: 2;
+        /* background-color: #f8f9fa; */
+    }
+    .ProfileBar .MobileMenu .Hamburger{
+        position: absolute;
+        /* left: 1px; */
+        top: 15%;
+        height: 25px;
+        cursor: pointer;
+        color: #b2002d;
+    }
+    .ProfileBar nav{
+        height: 5vh;
+        width: 50px;
+        position: fixed;
+        
+        background-color:#e2e4e5;
+        /* border: 2px solid rebeccapurple; */
+    }
+    .ProfileBar  nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 33px;
+        right: 0; 
+        background-color: #e2e4e5;
+        width: 30vw;
+        height: 50vh;
+        padding: 2px;  
+       
+    }
+    .ProfileBar nav ul li {
+      padding: 10px 0;
+      margin: 2px;
+      font-size: 19px;
+      font-weight:normal;
+     }
+     .ProfileBar nav ul li a{
+        text-decoration: none;
+        
+        color: #b2002d;
+     }
+     .ProfileBar a:hover{
+        border-bottom: 2px solid #b2002d;
+       }
+}
+
+@media (max-width: 540px){
+    .ProfileBar .DesktopMenu{
+        display: none;
+    }
+    .ProfileBar .MobileMenu{
+        display: flex;
+        position: fixed;
+        top: 15%;
+        z-index: 2;
+        /* background-color: #f8f9fa; */
+    }
+    .ProfileBar .MobileMenu .Hamburger{
+        position: absolute;
+        top: 15%;
+        height: 25px;
+        cursor: pointer;
+        color: #b2002d;
+    }
+    .ProfileBar nav{
+        height: 5vh;
+        width: 50px;
+        background-color:#e2e4e5;
+        /* border: 2px solid rebeccapurple; */
+    }
+    .ProfileBar  nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 33px;
+        right: 0; 
+        background-color: #e2e4e5;
+        width: 30vw;
+        height: 50vh;
+        padding: 2px;  
+        
+    }
+    .ProfileBar nav ul li {
+      padding: 12px 0;
+      margin: 2px;
+      font-size: 15px;
+      font-weight:normal;
+     }
+
+}

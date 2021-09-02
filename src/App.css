@@ -1,38 +1,313 @@
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: rgb(225, 232, 238);
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* NAVBAR 1 */
+.firstNavbar{
+  overflow: visible;
+ width: 100%;
+ left: 0px;
+  z-index: 2;
+ position: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+/* HOMEPAGE */
+
+.sliderDetails{
+  position:inherit ;
+  top:180px;
+  /* right: 20px;  */
+  
+  }
+  h1{
+    font-family: 'Noto Sans HK', sans-serif;
+  }
+  .backColor{
+    background-color: #B2002D;
+  }
+  .customerReviewCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: none;
+    outline: none;
+    border-radius: 20px; */
+    }
+  
+  .customerReviewCard:hover{
+    box-shadow:5px 10px 20px 1px rgba(0, 0, 0, 0.253);
+    transform: scale(1.1);
+    background-color:#B2002D ;
+    color: white;
+    
+  }
+  .customerReviewCard Img{
+    border-radius: 70px;
+  
+  }
+  .customerReviewCard Img:hover{
+    border-radius: 70px;
+    transform: scale(1.2);
+  }
+  ul{
+    margin: 0px 140px;
+  }
+  li{
+    list-style: none;
+    color: white;
+    font-size: 10px;
+    margin: 10px 5px;
+  }
+/* READY TO GET STARTED */
+@media screen and (max-width: 400px) {
+  .contentPosition {
+   top: 10rem;
+   left: 1rem;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 576px) {
+  .contentPosition {
+   top: 16rem;
+   right: 1rem;
+   left: 1rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .contentPosition {
+   top: 16rem;
+   left: 1.5rem;
+   right: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .contentPosition {
+   top: 16rem;
+   left: 3rem;
+   right: 3rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .contentPosition {
+   top: 16rem;
+   left: 3rem;
+   right: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px)   {
+  .contentPosition {
+   top: 16rem;
+   left: 4rem;
+   right: 4rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .contentPosition {
+   top: 16rem;
+   left: 5rem;
+   right: 5rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Join Meeting */
+@media screen and (max-width: 400px) {
+  .joinMeeting {
+   top: 9rem;
+   left: 2rem;
+   right: 2rem;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 576px) {
+  .joinMeeting {
+   top: 12rem;
+   left: 4rem;
+   right: 4rem;
+
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .joinMeeting {
+   top: 14rem;
+   left: 8rem;
+   right: 8rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .joinMeeting {
+   top: 14rem;
+   left: 12rem;
+   right: 12rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .joinMeeting {
+   top: 16rem;
+   left: 15rem;
+   right: 15rem;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px)   {
+  .joinMeeting {
+   top: 16rem;
+   left: 20rem;
+   right: 20rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .joinMeeting {
+   top: 16rem;
+   left: 35rem;
+   right: 35rem;
+  }
+}
+
+
+/* HOST A MEETING */
+@media screen and (max-width: 400px) {
+  .hostMeetingButton{
+    height: 5rem;
+  }
+}
+
+
+/* SIGN IN */
+@media screen and (max-width: 400px) {
+  .signInCard{
+    height: 23rem;
+    width: 16rem;
+    top: 2rem;
+    left: 1rem;
+    right: 1rem;
+  }
+  .signInButton{
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .signInCard{
+    height: 25rem;
+    width: 16rem;
+    top: 2rem;
+    float: right;
+    right: 0.5rem;
+  }
+  .signInButton{
+    width: 13rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .signInCard{
+    height: 24rem;
+    width: 22rem;
+    top: 2rem;
+    float: right;
+    right: 2rem;
+  }
+  .signInButton{
+    width: 19rem;
+  }
+}
+
+
+/* SIGN UP */
+
+@media screen and (max-width: 400px) {
+  .signUpCard{
+    height: 35rem;
+    width: 17rem;
+    top: 1rem;
+    left: 0.5rem;
+    right: 1rem;
+  }
+  .signUpButton{
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .signUpCard{
+    height: 35rem;
+    width: 20rem;
+    top: 2rem;
+    float: right;
+    right: 0.5rem;
+  }
+  .signUpButton{
+    width: 17rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .signUpCard{
+    height: 35rem;
+    width: 25rem;
+    top: 2rem;
+    float: right;
+    right: 2rem;
+    padding: 1rem;
+  }
+  .signUpButton{
+    width: 21rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PROFILE MANAGEMENT */
+
+.profileCol{
+  font-size: 0.8em;
+  text-align: left;
+  margin: 0.1rem;  
+}
+.contactCol{
+  text-align: left;
+  margin: 0 0.1rem; 
+  height: 4rem; 
+  /* border:2px solid grey; */
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #F2F2F2;
+}
+.contactCol:hover{
+  background-color: rgb(243, 236, 236);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
